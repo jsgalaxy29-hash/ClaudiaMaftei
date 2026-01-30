@@ -61,7 +61,8 @@
           </p>
         </div>
 
-        <div class="hero-card" aria-hidden="true">
+        <!-- MODIF: hero-card devient un visuel avec image -->
+        <div class="hero-card hero-image" aria-hidden="true">
           <div class="hero-symbol">ॐ</div>
           <div class="hero-lotus"></div>
           <div class="hero-glow"></div>
@@ -137,13 +138,19 @@
           <h2>À propos</h2>
         </header>
 
-        <div class="two-col">
+        <!-- MODIF: ajout de la photo + grille 3 colonnes -->
+        <div class="two-col about-with-photo">
+          <div class="about-photo">
+            <img src="images/portrait-claudia.png"
+                 alt="Portrait de Claudia Maftei, thérapeute holistique">
+          </div>
+
           <div class="panel">
             <h3>Parcours & formations</h3>
             <ul class="list">
               <li>Professeure de yoga <strong>RYT 500 heures</strong></li>
               <li>Reiki <strong>niveau 2</strong></li>
-			  <li><strong>Kundalini Activation Facilitator</strong></li>
+              <li><strong>Kundalini Activation Facilitator</strong></li>
             </ul>
             <p>
               Approche respectueuse, non dogmatique, adaptée au public accueilli (particuliers & professionnels).
@@ -186,7 +193,6 @@
 
           <div class="panel">
             <h3>Message</h3>
-            <!-- Formulaire HTML : il faut un backend (PHP/Netlify Forms/etc.) pour recevoir -->
             <form class="form" action="contact.php" method="post">
               <label>
                 Nom
@@ -213,7 +219,6 @@
           <a href="#mentions">Mentions légales</a> · <a href="#rgpd">Confidentialité</a>
         </footer>
 
-        <!-- Mentions minimalistes (à compléter selon le statut) -->
         <div id="mentions" class="panel panel-mini">
           <h3>Mentions légales (à compléter)</h3>
           <p class="small">

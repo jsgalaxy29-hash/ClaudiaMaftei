@@ -14,6 +14,7 @@
 
 *{ box-sizing: border-box; }
 html{ scroll-behavior: smooth; }
+
 body{
   margin:0;
   color: var(--text);
@@ -22,6 +23,27 @@ body{
               linear-gradient(180deg, var(--beige), #fff);
   font-family: "Lato", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   line-height:1.6;
+  position: relative;
+}
+
+/* fond décoratif lotus/om (image 3) */
+body::after{
+  content:"";
+  position: fixed;
+  right: -120px;
+  bottom: -120px;
+  width: 420px;
+  height: 420px;
+  background: url("images/lotus-om.png") no-repeat center/contain;
+  opacity: .08;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* garantir que le contenu est au-dessus du fond */
+.site-header, main, .site-footer{
+  position: relative;
+  z-index: 1;
 }
 
 a{ color: inherit; }
@@ -140,6 +162,31 @@ a{ color: inherit; }
   min-height: 260px;
   overflow:hidden;
 }
+
+/* Image 2 dans le hero */
+.hero-image{
+  background: url("images/meditation-lotus.png") center/cover no-repeat;
+}
+
+/* voile pour garder un rendu doux et préserver la lisibilité des éléments */
+.hero-image::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,.55),
+    rgba(255,255,255,.88)
+  );
+  z-index:0;
+}
+
+/* s'assurer que les éléments du hero passent au-dessus du voile */
+.hero-image > *{
+  position: relative;
+  z-index: 1;
+}
+
 .hero-symbol{
   position:absolute;
   right: 18px;
@@ -191,6 +238,7 @@ a{ color: inherit; }
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
+
 .card, .panel{
   background: rgba(255,255,255,.62);
   border: 1px solid rgba(159,182,165,.32);
@@ -198,6 +246,7 @@ a{ color: inherit; }
   box-shadow: var(--shadow);
   padding: 1rem 1rem .95rem;
 }
+
 .card-link{
   display:block;
   text-decoration:none;
@@ -239,6 +288,19 @@ a{ color: inherit; }
   gap: 1rem;
 }
 
+/* ABOUT: ajout photo (image 1) */
+.about-with-photo{
+  grid-template-columns: 280px 1fr 1fr;
+  align-items: start;
+}
+
+.about-photo img{
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+}
+
 .contact-grid{
   display:grid;
   grid-template-columns: 1fr 1fr;
@@ -263,6 +325,7 @@ a{ color: inherit; }
   gap:.75rem;
 }
 label{ display:grid; gap:.35rem; font-weight:700; }
+
 input, textarea{
   width:100%;
   border-radius: 12px;
@@ -273,6 +336,7 @@ input, textarea{
 }
 textarea{ resize: vertical; }
 .hp{ display:none !important; }
+
 .flash{
   border: 1px solid rgba(159,182,165,.5);
   border-radius: 14px;
@@ -286,6 +350,7 @@ textarea{ resize: vertical; }
 .flash-error{
   border-color: rgba(142,122,174,.6);
 }
+
 .small{ color: var(--muted); font-size:.95rem; margin:.35rem 0 0; }
 
 .legal{
@@ -320,6 +385,7 @@ textarea{ resize: vertical; }
   .hero-inner{ grid-template-columns: 1fr; }
   .grid{ grid-template-columns: repeat(2, 1fr); }
   .two-col, .contact-grid{ grid-template-columns: 1fr; }
+  .about-with-photo{ grid-template-columns: 1fr; }
 }
 
 @media (max-width: 640px){
