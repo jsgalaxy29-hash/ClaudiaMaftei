@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="robots" content="noindex" />
-  <title>Mentions légales – Claudia Maftei</title>
+  <title data-i18n="meta_legal_title">Mentions légales – Claudia Maftei</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,19 +14,25 @@
 </head>
 
 <body>
-  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <a class="skip-link" href="#contenu" data-i18n="global_skip_link">Aller au contenu</a>
 
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
         <div class="brand-name">Claudia Maftei</div>
-        <div class="brand-tagline">Thérapeute holistique</div>
+        <div class="brand-tagline" data-i18n="brand_tagline">Thérapeute holistique</div>
       </div>
 
-      <nav class="nav" aria-label="Navigation principale">
-        <a href="index.html">Accueil</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
+      <div class="header-actions">
+        <nav class="nav" data-i18n-aria-label="nav_label_primary" aria-label="Navigation principale">
+          <a href="index.html" data-i18n="nav_home">Accueil</a>
+          <a href="index.html#contact" data-i18n="nav_contact">Contact</a>
+        </nav>
+        <div class="language-toggle" data-i18n-aria-label="language_selector_label" aria-label="Sélecteur de langue">
+          <button class="lang-btn" type="button" data-lang="fr" aria-pressed="true" data-i18n="language_fr">FR</button>
+          <button class="lang-btn" type="button" data-lang="en" aria-pressed="false" data-i18n="language_en">EN</button>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -34,12 +40,12 @@
     <section class="section">
       <div class="container">
         <header class="section-head">
-          <h2>Mentions légales</h2>
+          <h2 data-i18n="legal_page_heading">Mentions légales</h2>
         </header>
 
         <div class="panel">
-          <h3>Éditeur du site</h3>
-          <p>
+          <h3 data-i18n="legal_editor_title">Éditeur du site</h3>
+          <p data-i18n-html="legal_editor_body">
             Nom : <strong>Claudia Maftei</strong><br>
             Statut : <strong>Micro-entreprise</strong><br>
             Activité : Thérapeute holistique – pratiques de bien-être<br>
@@ -50,8 +56,8 @@
         </div>
 
         <div class="panel">
-          <h3>Hébergement</h3>
-          <p>
+          <h3 data-i18n="legal_hosting_title">Hébergement</h3>
+          <p data-i18n-html="legal_hosting_body">
             Le site est hébergé par :<br>
             <strong>OVH SAS</strong><br>
             2 rue Kellermann – 59100 Roubaix – France<br>
@@ -61,12 +67,12 @@
         </div>
 
         <div class="panel">
-          <h3>Responsabilité</h3>
-          <p>
+          <h3 data-i18n="legal_liability_title">Responsabilité</h3>
+          <p data-i18n="legal_liability_body1">
             Les informations diffusées sur ce site sont fournies à titre informatif dans le cadre
             d’une démarche de bien-être.
           </p>
-          <p>
+          <p data-i18n="legal_liability_body2">
             Les pratiques proposées (Reiki, activation de l’énergie vitale / Kundalini, Yoga,
             Breathwork / Pranayama, Méditation) ne constituent ni des actes médicaux,
             ni des traitements thérapeutiques, et ne se substituent en aucun cas à un suivi
@@ -75,24 +81,24 @@
         </div>
 
         <div class="panel">
-          <h3>Propriété intellectuelle</h3>
-          <p>
+          <h3 data-i18n="legal_ip_title">Propriété intellectuelle</h3>
+          <p data-i18n="legal_ip_body1">
             L’ensemble des contenus présents sur ce site (textes, images, éléments graphiques,
             structure) est la propriété exclusive de Claudia Maftei, sauf mention contraire.
           </p>
-          <p>
+          <p data-i18n="legal_ip_body2">
             Toute reproduction, représentation, modification ou diffusion, même partielle,
             sans autorisation écrite préalable est interdite.
           </p>
         </div>
 
         <div class="panel">
-          <h3>Données personnelles</h3>
-          <p>
+          <h3 data-i18n="legal_data_title">Données personnelles</h3>
+          <p data-i18n="legal_data_body1">
             Les données collectées via le formulaire de contact (nom, adresse email, message)
             sont utilisées exclusivement pour répondre aux demandes envoyées.
           </p>
-          <p>
+          <p data-i18n="legal_data_body2">
             Aucune donnée personnelle n’est cédée ou vendue à des tiers.
             Conformément au Règlement Général sur la Protection des Données (RGPD),
             vous disposez d’un droit d’accès, de rectification et de suppression de vos données
@@ -101,7 +107,7 @@
         </div>
 
         <div style="margin-top:1rem;">
-          <a class="btn btn-ghost" href="index.html">← Retour à l’accueil</a>
+          <a class="btn btn-ghost" href="index.html" data-i18n="legal_back_home">← Retour à l’accueil</a>
         </div>
 
       </div>
@@ -111,7 +117,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>© <span id="year"></span> Claudia Maftei</div>
-      <div class="footer-note">Mentions légales</div>
+      <div class="footer-note" data-i18n="legal_footer_note">Mentions légales</div>
     </div>
   </footer>
 

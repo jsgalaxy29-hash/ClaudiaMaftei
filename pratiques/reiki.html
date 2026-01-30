@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Séances de Reiki avec Claudia Maftei – pratique énergétique douce et sobre." />
-  <title>Reiki – Claudia Maftei</title>
+  <meta name="description" content="Séances de Reiki avec Claudia Maftei – pratique énergétique douce et sobre." data-i18n-content="meta_reiki_description" />
+  <title data-i18n="page_title_reiki">Reiki – Claudia Maftei</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,25 +14,31 @@
 </head>
 
 <body>
-  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <a class="skip-link" href="#contenu" data-i18n="global_skip_link">Aller au contenu</a>
 
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
         <div class="brand-name">Claudia Maftei</div>
-        <div class="brand-tagline">Thérapeute holistique</div>
+        <div class="brand-tagline" data-i18n="brand_tagline">Thérapeute holistique</div>
       </div>
 
-      <nav class="nav" aria-label="Navigation principale">
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
-          Menu
-        </button>
-        <div id="nav-links" class="nav-links">
-          <a href="../index.html#pratiques">Pratiques</a>
-          <a href="../index.html#apropos">À propos</a>
-          <a href="../index.html#contact">Contact</a>
+      <div class="header-actions">
+        <nav class="nav" data-i18n-aria-label="nav_label_primary" aria-label="Navigation principale">
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-i18n="nav_menu">
+            Menu
+          </button>
+          <div id="nav-links" class="nav-links">
+            <a href="../index.html#pratiques" data-i18n="nav_practices">Pratiques</a>
+            <a href="../index.html#apropos" data-i18n="nav_about">À propos</a>
+            <a href="../index.html#contact" data-i18n="nav_contact">Contact</a>
+          </div>
+        </nav>
+        <div class="language-toggle" data-i18n-aria-label="language_selector_label" aria-label="Sélecteur de langue">
+          <button class="lang-btn" type="button" data-lang="fr" aria-pressed="true" data-i18n="language_fr">FR</button>
+          <button class="lang-btn" type="button" data-lang="en" aria-pressed="false" data-i18n="language_en">EN</button>
         </div>
-      </nav>
+      </div>
     </div>
   </header>
 
@@ -40,35 +46,35 @@
     <section class="section">
       <div class="container">
         <header class="section-head">
-          <h2>Reiki</h2>
-          <p>Pratique énergétique d'origine japonaise, orientée vers le relâchement et l'apaisement.</p>
+          <h2 data-i18n="practice_title_reiki">Reiki</h2>
+          <p data-i18n="practice_reiki_intro">Pratique énergétique d'origine japonaise, orientée vers le relâchement et l'apaisement.</p>
         </header>
 
         <div class="panel">
-          <h3>En quoi ça consiste</h3>
-          <p>
+          <h3 data-i18n="practice_reiki_about_title">En quoi ça consiste</h3>
+          <p data-i18n="practice_reiki_about_body">
             Le Reiki se pratique par apposition des mains dans un cadre calme et respectueux. L'objectif est de soutenir
             la détente et l'écoute du corps, sans promesse ni intention médicale.
           </p>
-          <p class="badge">Formation : Reiki niveau 2</p>
+          <p class="badge" data-i18n="card_reiki_badge">Formation : Reiki niveau 2</p>
         </div>
 
         <div class="panel" style="margin-top: 1rem;">
-          <h3>Modalités</h3>
+          <h3 data-i18n="practice_modalities_title">Modalités</h3>
           <ul class="list">
-            <li>Publics : tout public, particuliers et professionnels.</li>
-            <li>Lieux : séances proposées au salon ou en extérieur.</li>
-            <li>Tarifs communiqués sur demande.</li>
+            <li data-i18n="practice_reiki_public">Publics : tout public, particuliers et professionnels.</li>
+            <li data-i18n="practice_reiki_places">Lieux : séances proposées au salon ou en extérieur.</li>
+            <li data-i18n="practice_reiki_pricing">Tarifs communiqués sur demande.</li>
           </ul>
         </div>
 
-        <p class="small" style="margin-top: 1rem;">
+        <p class="small" style="margin-top: 1rem;" data-i18n="practice_disclaimer">
           Ces pratiques s’inscrivent dans une démarche de bien-être et ne se substituent pas à un suivi médical.
         </p>
 
         <div class="hero-cta" style="margin-top: 1.4rem;">
-          <a class="btn btn-ghost" href="../index.html#pratiques">← Retour aux pratiques</a>
-          <a class="btn" href="../index.html#contact">Contact</a>
+          <a class="btn btn-ghost" href="../index.html#pratiques" data-i18n="practice_back_practices">← Retour aux pratiques</a>
+          <a class="btn" href="../index.html#contact" data-i18n="practice_contact">Contact</a>
         </div>
       </div>
     </section>
@@ -77,7 +83,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>© <span id="year"></span> Claudia Maftei</div>
-      <div class="footer-note">Reiki · Kundalini · Yoga · Breathwork · Méditation</div>
+      <div class="footer-note" data-i18n="footer_note">Reiki · Kundalini · Yoga · Breathwork · Méditation</div>
     </div>
   </footer>
 
