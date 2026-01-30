@@ -78,46 +78,46 @@
         </header>
 
         <div class="grid">
-          <article class="card">
+          <a class="card card-link" href="pratiques/kundalini-activation.html">
             <h3>Kundalini Activation</h3>
             <p>
               Pratique énergétique visant à stimuler l’énergie vitale et à favoriser détente, clarté intérieure
               et reconnexion à soi. Séances individuelles ou collectives.
             </p>
-          </article>
+          </a>
 
-          <article class="card">
+          <a class="card card-link" href="pratiques/reiki.html">
             <h3>Reiki</h3>
             <p>
               Pratique énergétique d’origine japonaise par apposition des mains, accompagnant la détente
               et le mieux-être général.
             </p>
             <p class="badge">Formation : Reiki niveau 2</p>
-          </article>
+          </a>
 
-          <article class="card">
+          <a class="card card-link" href="pratiques/yoga.html">
             <h3>Yoga</h3>
             <ul class="list">
               <li><strong>Hatha yoga</strong> : postures, respiration, ancrage.</li>
               <li><strong>Restorative yoga</strong> : relaxation profonde, récupération.</li>
             </ul>
-          </article>
+          </a>
 
-          <article class="card">
+          <a class="card card-link" href="pratiques/breathwork-pranayama.html">
             <h3>Breathwork / Pranayama</h3>
             <p>
               Pratiques respiratoires issues des traditions yogiques et contemporaines, pour soutenir
               la régulation, la concentration et la détente.
             </p>
-          </article>
+          </a>
 
-          <article class="card">
+          <a class="card card-link" href="pratiques/meditation.html">
             <h3>Méditation</h3>
             <p>
               Méditations guidées favorisant présence, apaisement mental et conscience corporelle.
               Adaptées aux débutants comme aux pratiquants avancés.
             </p>
-          </article>
+          </a>
 
           <article class="card card-soft">
             <h3>Pour les professionnels</h3>
@@ -187,7 +187,7 @@
           <div class="panel">
             <h3>Message</h3>
             <!-- Formulaire HTML : il faut un backend (PHP/Netlify Forms/etc.) pour recevoir -->
-            <form class="form" action="#" method="post">
+            <form class="form" action="contact.php" method="post">
               <label>
                 Nom
                 <input name="name" autocomplete="name" required />
@@ -200,9 +200,10 @@
                 Message
                 <textarea name="message" rows="5" required></textarea>
               </label>
+              <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
               <button class="btn" type="submit">Envoyer</button>
               <p class="small">
-                (Ce formulaire est statique. Pour recevoir les messages, dis-moi où tu héberges et je te donne la solution adaptée.)
+                Je réponds dès que possible avec les informations pratiques.
               </p>
             </form>
           </div>
@@ -238,18 +239,6 @@
     </div>
   </footer>
 
-  <script>
-    // menu mobile
-    const btn = document.querySelector('.nav-toggle');
-    const links = document.getElementById('nav-links');
-    btn?.addEventListener('click', () => {
-      const expanded = btn.getAttribute('aria-expanded') === 'true';
-      btn.setAttribute('aria-expanded', String(!expanded));
-      links.classList.toggle('open');
-    });
-
-    // année
-    document.getElementById('year').textContent = String(new Date().getFullYear());
-  </script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

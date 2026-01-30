@@ -198,6 +198,21 @@ a{ color: inherit; }
   box-shadow: var(--shadow);
   padding: 1rem 1rem .95rem;
 }
+.card-link{
+  display:block;
+  text-decoration:none;
+  color: inherit;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.card-link:hover,
+.card-link:focus-visible{
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0,0,0,.1);
+}
+.card-link:focus-visible{
+  outline: 2px solid rgba(159,182,165,.7);
+  outline-offset: 3px;
+}
 .card h3, .panel h3{
   margin:.1rem 0 .5rem;
   font-size: 1.15rem;
@@ -257,6 +272,20 @@ input, textarea{
   font: inherit;
 }
 textarea{ resize: vertical; }
+.hp{ display:none !important; }
+.flash{
+  border: 1px solid rgba(159,182,165,.5);
+  border-radius: 14px;
+  padding: .75rem .9rem;
+  background: rgba(255,255,255,.7);
+  margin: 0 0 .9rem;
+}
+.flash-success{
+  border-color: rgba(159,182,165,.6);
+}
+.flash-error{
+  border-color: rgba(142,122,174,.6);
+}
 .small{ color: var(--muted); font-size:.95rem; margin:.35rem 0 0; }
 
 .legal{
