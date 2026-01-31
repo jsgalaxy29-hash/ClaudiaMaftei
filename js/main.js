@@ -110,21 +110,21 @@ const translations = {
       'La séance propose un cadre sécurisé favorisant la détente, l\'observation des sensations et une reconnexion douce à l\'énergie vitale. Le rythme est adapté à chaque personne, en individuel ou en petit groupe.',
     practice_modalities_title: 'Modalités',
     practice_kundalini_public: 'Publics : tout public, particuliers et professionnels.',
-    practice_kundalini_places: 'Lieux : séances proposées au salon ou en extérieur.',
+    practice_kundalini_places: 'Lieux : Cabinet, domicile, entreprise.',
     practice_kundalini_pricing: 'Tarifs communiqués sur demande.',
     practice_disclaimer:
       'Ces pratiques s’inscrivent dans une démarche de bien-être et ne se substituent pas à un suivi médical.',
     practice_back_practices: '← Retour aux pratiques',
     practice_contact: 'Contact',
     practice_reiki_intro:
-      'Une pratique énergétique douce et structurée pour soutenir le relâchement, l’apaisement et l’harmonisation.',
+      '« Par le Reïki, l\'être humain retrouvera en premier la santé, et ensuite la paix de l\'esprit et la joie de vivre augmenteront » — Mikao Usui.',
     practice_reiki_about_title: 'Le Reiki',
     practice_reiki_about_body:
-      'Le Reiki est une technique japonaise de bien-être par apposition des mains, visant à soutenir l’équilibre global. La séance est menée dans le respect de votre rythme.',
+      'Le Reiki est une pratique énergétique japonaise douce et structurée, réalisée par apposition des mains, visant à soutenir le relâchement, l’apaisement et l’harmonisation de l’équilibre global, dans le respect de votre rythme.',
     practice_reiki_modalities_intro:
       'Les séances peuvent être proposées en individuel ou en petit groupe, selon les besoins.',
     practice_reiki_public: 'Publics : tout public, particuliers et professionnels.',
-    practice_reiki_places: 'Lieux : séances proposées au salon ou en extérieur.',
+    practice_reiki_places: 'Lieux : Cabinet, domicile, entreprise.',
     practice_reiki_pricing: 'Tarifs communiqués sur demande.',
     practice_yoga_intro:
       'Des pratiques corporelles et respiratoires pour soutenir l’équilibre, la vitalité et la récupération.',
@@ -141,7 +141,7 @@ const translations = {
     practice_yoga_modalities_intro:
       'Les séances sont adaptées au niveau de chacun, en individuel ou en petit groupe.',
     practice_yoga_public: 'Publics : tout public, particuliers et professionnels.',
-    practice_yoga_places: 'Lieux : séances proposées au salon ou en extérieur.',
+    practice_yoga_places: 'Lieux : Cabinet, domicile, entreprise.',
     practice_yoga_pricing: 'Tarifs communiqués sur demande.',
     practice_breathwork_intro:
       'Des pratiques respiratoires pour revenir au calme, clarifier l’esprit et soutenir la régulation du corps.',
@@ -151,7 +151,7 @@ const translations = {
     practice_breathwork_modalities_intro:
       'Les exercices sont ajustés à votre rythme et à vos besoins.',
     practice_breathwork_public: 'Publics : tout public, particuliers et professionnels.',
-    practice_breathwork_places: 'Lieux : séances proposées au salon ou en extérieur.',
+    practice_breathwork_places: 'Lieux : Cabinet, domicile, entreprise.',
     practice_breathwork_pricing: 'Tarifs communiqués sur demande.',
     practice_meditation_intro:
       'Des méditations guidées pour cultiver la présence, l’apaisement mental et la conscience corporelle.',
@@ -161,7 +161,7 @@ const translations = {
     practice_meditation_modalities_intro:
       'Proposées en individuel ou en petit groupe, pour débutants ou pratiquants avancés.',
     practice_meditation_public: 'Publics : tout public, particuliers et professionnels.',
-    practice_meditation_places: 'Lieux : séances proposées au salon ou en extérieur.',
+    practice_meditation_places: 'Lieux : Cabinet, domicile, entreprise.',
     practice_meditation_pricing: 'Tarifs communiqués sur demande.',
     legal_page_heading: 'Mentions légales',
     legal_editor_title: 'Éditeur du site',
