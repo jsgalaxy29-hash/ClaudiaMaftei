@@ -74,7 +74,7 @@ const translations = {
     legal_links_title: 'Mentions légales',
     privacy_links_title: 'Confidentialité',
     legal_publisher_text:
-      'Éditeur : Claudia Maftei · Activité : Thérapeute holistique · Contact : claudia.segallen@gmail.com',
+      'Éditeur : Claudia Maftei · Activité : Thérapeute holistique · Contact : claudia.segalen@gmail.com',
     privacy_panel_text:
       'Les informations envoyées via le formulaire servent uniquement à répondre à la demande et ne sont pas revendues.',
     footer_note: 'Reiki · Kundalini · Yoga · Breathwork · Méditation',
@@ -319,7 +319,7 @@ const translations = {
     legal_links_title: 'Legal notice',
     privacy_links_title: 'Privacy',
     legal_publisher_text:
-      'Publisher: Claudia Maftei · Activity: Holistic therapist · Contact: claudia.segallen@gmail.com',
+      'Publisher: Claudia Maftei · Activity: Holistic therapist · Contact: claudia.segalen@gmail.com',
     privacy_panel_text:
       'Information sent through the form is used only to respond to your request and is not resold.',
     footer_note: 'Reiki · Kundalini · Yoga · Breathwork · Meditation',
