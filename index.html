@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Claudia Maftei – Thérapeute holistique : Reiki, Kundalini activation, Yoga (Hatha, Restorative), Breathwork/Pranayama, Méditation." />
-  <title>Claudia Maftei – Thérapeute holistique</title>
+  <meta name="description" content="Claudia Maftei – Thérapeute holistique : Reiki, Kundalini activation, Yoga (Hatha, Restorative), Breathwork/Pranayama, Méditation." data-i18n-content="meta_index_description" />
+  <title data-i18n="page_title_index">Claudia Maftei – Thérapeute holistique</title>
 
   <!-- Fonts (Google Fonts) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,25 +15,31 @@
 </head>
 
 <body>
-  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <a class="skip-link" href="#contenu" data-i18n="global_skip_link">Aller au contenu</a>
 
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
         <div class="brand-name">Claudia Maftei</div>
-        <div class="brand-tagline">Thérapeute holistique</div>
+        <div class="brand-tagline" data-i18n="brand_tagline">Thérapeute holistique</div>
       </div>
 
-      <nav class="nav" aria-label="Navigation principale">
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
-          Menu
-        </button>
-        <div id="nav-links" class="nav-links">
-          <a href="#pratiques">Pratiques</a>
-          <a href="#apropos">À propos</a>
-          <a href="#contact">Contact</a>
+      <div class="header-actions">
+        <nav class="nav" data-i18n-aria-label="nav_label_primary" aria-label="Navigation principale">
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-i18n="nav_menu">
+            Menu
+          </button>
+          <div id="nav-links" class="nav-links">
+            <a href="#pratiques" data-i18n="nav_practices">Pratiques</a>
+            <a href="#apropos" data-i18n="nav_about">À propos</a>
+            <a href="#contact" data-i18n="nav_contact">Contact</a>
+          </div>
+        </nav>
+        <div class="language-toggle" data-i18n-aria-label="language_selector_label" aria-label="Sélecteur de langue">
+          <button class="lang-btn" type="button" data-lang="fr" aria-pressed="true" data-i18n="language_fr">FR</button>
+          <button class="lang-btn" type="button" data-lang="en" aria-pressed="false" data-i18n="language_en">EN</button>
         </div>
-      </nav>
+      </div>
     </div>
   </header>
 
@@ -43,22 +49,19 @@
       <div class="container hero-inner">
         <div class="hero-text">
           <h1>Claudia Maftei</h1>
-          <p class="lead">
+          <p class="lead" data-i18n="hero_lead">
             Reiki • Activation d’énergie vitale / Kundalini • Yoga • Breathwork / Pranayama • Méditation
           </p>
-          <p class="sublead">
+          <p class="sublead" data-i18n="hero_sublead">
             Accompagnement du corps et de l’esprit par des pratiques énergétiques, respiratoires et corporelles.
             Séances proposées en France, pour particuliers et professionnels.
           </p>
 
           <div class="hero-cta">
-            <a class="btn" href="#contact">Prendre contact</a>
-            <a class="btn btn-ghost" href="#pratiques">Découvrir les pratiques</a>
+            <a class="btn" href="#contact" data-i18n="hero_cta_contact">Prendre contact</a>
+            <a class="btn btn-ghost" href="#pratiques" data-i18n="hero_cta_practices">Découvrir les pratiques</a>
           </div>
 
-          <p class="note">
-            Aucun tarif affiché : modalités communiquées sur demande (lieux d’intervention variables).
-          </p>
         </div>
 
         <!-- MODIF: hero-card devient un visuel avec image -->
@@ -74,55 +77,54 @@
     <section id="pratiques" class="section">
       <div class="container">
         <header class="section-head">
-          <h2>Pratiques</h2>
-          <p>Approche globale, sobre, centrée sur l’écoute et le respect du rythme de chacun.</p>
+          <h2 data-i18n="section_practices_title">Pratiques</h2>
+          <p data-i18n="section_practices_subtitle">Approche globale, sobre, centrée sur l’écoute et le respect du rythme de chacun.</p>
         </header>
 
         <div class="grid">
           <a class="card card-link" href="pratiques/kundalini-activation.html">
-            <h3>Kundalini Activation</h3>
-            <p>
+            <h3 data-i18n="card_kundalini_title">Kundalini Activation</h3>
+            <p data-i18n="card_kundalini_desc">
               Pratique énergétique visant à stimuler l’énergie vitale et à favoriser détente, clarté intérieure
               et reconnexion à soi. Séances individuelles ou collectives.
             </p>
           </a>
 
           <a class="card card-link" href="pratiques/reiki.html">
-            <h3>Reiki</h3>
-            <p>
+            <h3 data-i18n="card_reiki_title">Reiki</h3>
+            <p data-i18n="card_reiki_desc">
               Pratique énergétique d’origine japonaise par apposition des mains, accompagnant la détente
               et le mieux-être général.
             </p>
-            <p class="badge">Formation : Reiki niveau 2</p>
           </a>
 
           <a class="card card-link" href="pratiques/yoga.html">
-            <h3>Yoga</h3>
+            <h3 data-i18n="card_yoga_title">Yoga</h3>
             <ul class="list">
-              <li><strong>Hatha yoga</strong> : postures, respiration, ancrage.</li>
-              <li><strong>Restorative yoga</strong> : relaxation profonde, récupération.</li>
+              <li data-i18n-html="card_yoga_hatha"><strong>Hatha yoga</strong> : postures, respiration, ancrage.</li>
+              <li data-i18n-html="card_yoga_restorative"><strong>Restorative yoga</strong> : relaxation profonde, récupération.</li>
             </ul>
           </a>
 
           <a class="card card-link" href="pratiques/breathwork-pranayama.html">
-            <h3>Breathwork / Pranayama</h3>
-            <p>
+            <h3 data-i18n="card_breathwork_title">Breathwork / Pranayama</h3>
+            <p data-i18n="card_breathwork_desc">
               Pratiques respiratoires issues des traditions yogiques et contemporaines, pour soutenir
               la régulation, la concentration et la détente.
             </p>
           </a>
 
           <a class="card card-link" href="pratiques/meditation.html">
-            <h3>Méditation</h3>
-            <p>
+            <h3 data-i18n="card_meditation_title">Méditation</h3>
+            <p data-i18n="card_meditation_desc">
               Méditations guidées favorisant présence, apaisement mental et conscience corporelle.
               Adaptées aux débutants comme aux pratiquants avancés.
             </p>
           </a>
 
           <article class="card card-soft">
-            <h3>Pour les professionnels</h3>
-            <p>
+            <h3 data-i18n="card_prof_title">Pour les professionnels</h3>
+            <p data-i18n="card_prof_desc">
               Interventions possibles en entreprise (ateliers respiration, yoga doux, méditation, sessions bien-être).
               Format et modalités sur demande.
             </p>
@@ -135,35 +137,30 @@
     <section id="apropos" class="section section-alt">
       <div class="container">
         <header class="section-head">
-          <h2>À propos</h2>
+          <h2 data-i18n="section_about_title">À propos</h2>
         </header>
 
         <!-- MODIF: ajout de la photo + grille 3 colonnes -->
         <div class="two-col about-with-photo">
           <div class="about-photo">
             <img src="images/portrait-claudia.png"
-                 alt="Portrait de Claudia Maftei, thérapeute holistique">
+                 alt="Portrait de Claudia Maftei, thérapeute holistique"
+                 data-i18n-alt="about_photo_alt">
           </div>
 
           <div class="panel">
-            <h3>Parcours & formations</h3>
-            <ul class="list">
-              <li>Professeure de yoga <strong>RYT 500 heures</strong></li>
-              <li>Reiki <strong>niveau 2</strong></li>
-              <li><strong>Kundalini Activation Facilitator</strong></li>
-            </ul>
-            <p>
+            <p data-i18n="about_desc">
               Approche respectueuse, non dogmatique, adaptée au public accueilli (particuliers & professionnels).
             </p>
           </div>
 
           <div class="panel">
-            <h3>Cadre</h3>
-            <p class="small">
+            <h3 data-i18n="about_framework_title">Cadre</h3>
+            <p class="small" data-i18n="about_framework_desc1">
               Les pratiques proposées s’inscrivent dans une démarche de bien-être et ne se substituent pas à un suivi
               médical ou thérapeutique.
             </p>
-            <p class="small">
+            <p class="small" data-i18n="about_framework_desc2">
               Les lieux d’intervention pouvant varier, les informations pratiques sont communiquées lors de la prise de contact.
             </p>
           </div>
@@ -175,40 +172,40 @@
     <section id="contact" class="section">
       <div class="container">
         <header class="section-head">
-          <h2>Contact</h2>
-          <p>Écris ou appelle pour connaître les disponibilités et modalités.</p>
+          <h2 data-i18n="section_contact_title">Contact</h2>
+          <p data-i18n="section_contact_subtitle">Écris ou appelle pour connaître les disponibilités et modalités.</p>
         </header>
 
         <div class="contact-grid">
           <div class="panel">
-            <h3>Coordonnées</h3>
+            <h3 data-i18n="contact_details_title">Coordonnées</h3>
             <ul class="contact-list">
               <li><span class="ico">📞</span> <a href="tel:+33671264523">+33 6 71 26 45 23</a></li>
               <li><span class="ico">✉️</span> <a href="mailto:claudia.segalen@gmail.com">claudia.segalen@gmail.com</a></li>
-              <li><span class="ico">🌐</span> <a href="https://www.resalib.fr/praticien/109814-claudia-therapeute-holistique-pont-de-buis-les-quimerch" target="_blank" rel="noopener">Prendre rendez-vous</a></li>
-              <li><span class="ico">📍</span> 23 Rue de Quimper, Pont-de-Buis-lès-Quimerch</li>
-              <li><span class="ico"s>ⓕ</span> <a href="https://www.facebook.com/people/Yogi-Claudia/100004952267103/" target="_blank" rel="noopener">Facebook : Yogi Claudia</a></li>
-			</ul>
+              <li><span class="ico">🌐</span> <a href="https://www.resalib.fr/praticien/109814-claudia-therapeute-holistique-pont-de-buis-les-quimerch" target="_blank" rel="noopener" data-i18n="contact_schedule_link">Prendre rendez-vous</a></li>
+              <li><span class="ico">📍</span> <span data-i18n="contact_address">23 Rue de Quimper, Pont-de-Buis-lès-Quimerch</span></li>
+              <li><span class="ico">ⓕ</span> <a href="https://www.facebook.com/people/Yogi-Claudia/100004952267103/" target="_blank" rel="noopener" data-i18n="contact_schedule_link">Page Facebook</a></li>
+            </ul>
           </div>
 
           <div class="panel">
-            <h3>Message</h3>
+            <h3 data-i18n="contact_message_title">Message</h3>
             <form class="form" action="contact.php" method="post">
               <label>
-                Nom
+                <span data-i18n="form_name">Nom</span>
                 <input name="name" autocomplete="name" required />
               </label>
               <label>
-                Email
+                <span data-i18n="form_email">Email</span>
                 <input name="email" type="email" autocomplete="email" required />
               </label>
               <label>
-                Message
+                <span data-i18n="form_message">Message</span>
                 <textarea name="message" rows="5" required></textarea>
               </label>
               <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
-              <button class="btn" type="submit">Envoyer</button>
-              <p class="small">
+              <button class="btn" type="submit" data-i18n="form_send">Envoyer</button>
+              <p class="small" data-i18n="form_note">
                 Je réponds dès que possible avec les informations pratiques.
               </p>
             </form>
@@ -216,19 +213,19 @@
         </div>
 
         <footer class="legal">
-          <a href="#mentions">Mentions légales</a> · <a href="#rgpd">Confidentialité</a>
+          <a href="#mentions" data-i18n="legal_links_title">Mentions légales</a> · <a href="#rgpd" data-i18n="privacy_links_title">Confidentialité</a>
         </footer>
 
         <div id="mentions" class="panel panel-mini">
-          <a href="mentions-legales.html">Mentions légales</a>
-          <p class="small">
+          <a href="mentions-legales.html" data-i18n="legal_links_title">Mentions légales</a>
+          <p class="small" data-i18n="legal_publisher_text">
             Éditeur : Claudia Maftei · Activité : Thérapeute holistique · Contact : claudia.segallen@gmail.com
           </p>
         </div>
 
         <div id="rgpd" class="panel panel-mini">
-          <a href="politique-confidentialite.html">Politique de confidentialité</a>
-          <p class="small">
+          <a href="politique-confidentialite.html" data-i18n="page_title_privacy">Politique de confidentialité</a>
+          <p class="small" data-i18n="privacy_panel_text">
             Les informations envoyées via le formulaire servent uniquement à répondre à la demande et ne sont pas revendues.
           </p>
         </div>
@@ -240,7 +237,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>© <span id="year"></span> Claudia Maftei</div>
-      <div class="footer-note">Reiki · Kundalini · Yoga · Breathwork · Méditation</div>
+      <div class="footer-note" data-i18n="footer_note">Reiki · Kundalini · Yoga · Breathwork · Méditation</div>
     </div>
   </footer>
 

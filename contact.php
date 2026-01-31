@@ -31,7 +31,7 @@ $headers[] = 'From: ' . $from;
 $headers[] = 'Reply-To: ' . $email;
 $headers[] = 'Content-Type: text/plain; charset=UTF-8';
 
-$sent = mail('claudia.segalen@gmail.com', $subject, $body, implode("\r\n", $headers));
+$sent = mail('claudia.segallen@gmail.com', $subject, $body, implode("\r\n", $headers));
 
 if ($sent) {
     header('Location: index.html#contact?sent=1');
