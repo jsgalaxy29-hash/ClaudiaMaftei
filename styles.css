@@ -260,6 +260,16 @@ a{ color: inherit; }
   max-width: 70ch;
 }
 
+.practice-quote{
+  font-style: italic;
+  color: var(--ink);
+  background: rgba(255,255,255,.6);
+  border-left: 3px solid rgba(168,130,182,.4);
+  padding: .65rem 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
 .practice-visual{
   margin: 0 0 1.4rem;
   border-radius: var(--radius);
@@ -274,6 +284,12 @@ a{ color: inherit; }
   display: block;
   max-height: 320px;
   object-fit: cover;
+}
+
+.practice-visual--full img{
+  max-height: none;
+  object-fit: contain;
+  height: auto;
 }
 
 .grid{
