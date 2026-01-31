@@ -35,7 +35,7 @@ body::after{
   width: 420px;
   height: 420px;
   background: url("images/lotus-om.png") no-repeat center/contain;
-  opacity: .08;
+  opacity: .16;
   pointer-events: none;
   z-index: 0;
 }
@@ -202,8 +202,8 @@ a{ color: inherit; }
   inset:0;
   background: linear-gradient(
     to bottom,
-    rgba(255,255,255,.55),
-    rgba(255,255,255,.88)
+    rgba(255,255,255,.35),
+    rgba(255,255,255,.72)
   );
   z-index:0;
 }
@@ -258,6 +258,22 @@ a{ color: inherit; }
   margin:.2rem 0 1.2rem;
   color: var(--muted);
   max-width: 70ch;
+}
+
+.practice-visual{
+  margin: 0 0 1.4rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(159,182,165,.32);
+  background: rgba(255,255,255,.6);
+}
+
+.practice-visual img{
+  width: 100%;
+  display: block;
+  max-height: 320px;
+  object-fit: cover;
 }
 
 .grid{
