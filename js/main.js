@@ -52,7 +52,7 @@ const translations = {
     about_list_reiki: 'Reiki <strong>niveau 2</strong>',
     about_list_kundalini: '<strong>Kundalini Activation Facilitator</strong>',
     about_desc:
-      'Approche respectueuse, non dogmatique, adaptée au public accueilli (particuliers & professionnels).',
+      'Mon objectif est de vous aider à retrouver un équilibre et une harmonie dans votre vie grâce à un accompagnement bienveillant et personnalisé. Intuitive et à l’écoute des messages de votre corps, je vous aide à libérer ce dont vous n’avez plus besoin afin que vous vous sentiez mieux. Je privilégie une approche directe, simple et authentique, respectueuse et non dogmatique, adaptée aux particuliers comme aux professionnels, dans un cadre chaleureux et sans jugement.',
     about_framework_title: 'Cadre',
     about_framework_desc1:
       'Les pratiques proposées s’inscrivent dans une démarche de bien-être et ne se substituent pas à un suivi médical ou thérapeutique.',
@@ -307,7 +307,7 @@ const translations = {
     about_list_reiki: 'Reiki <strong>level 2</strong>',
     about_list_kundalini: '<strong>Kundalini Activation Facilitator</strong>',
     about_desc:
-      'Respectful, non-dogmatic approach tailored to the people welcomed (individuals & professionals).',
+      'My goal is to help you regain balance and harmony in your life through compassionate, personalized support. Intuitive and attentive to your body’s messages, I help you release what you no longer need so you can feel better. I favor a direct, simple, and authentic approach, respectful and non-dogmatic, tailored to both individuals and professionals, in a warm and non-judgmental setting.',
     about_framework_title: 'Framework',
     about_framework_desc1:
       'The practices offered are part of a well-being approach and do not replace medical or therapeutic care.',
