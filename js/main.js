@@ -121,6 +121,16 @@ const translations = {
     practice_reiki_about_title: 'Le Reiki',
     practice_reiki_about_body:
       'Le Reiki est une pratique énergétique japonaise douce et structurée, réalisée par apposition des mains, visant à soutenir le relâchement, l’apaisement et l’harmonisation de l’équilibre global, dans le respect de votre rythme.',
+    practice_reiki_benefits_title: 'Quels bénéfices en attendre ?',
+    practice_reiki_benefit_healing: 'Réveil de vos systèmes d’auto guérison',
+    practice_reiki_benefit_body_awareness: 'Amélioration de la conscience du corps',
+    practice_reiki_benefit_stress_emotions: 'Meilleure gestion du stress et des émotions',
+    practice_reiki_benefit_energy: 'Gain d’énergie',
+    practice_reiki_benefit_circulation: 'Amélioration de la circulation énergétique',
+    practice_reiki_benefit_pain_relief: 'Soulagement des douleurs physiques',
+    practice_reiki_benefit_regulation:
+      'Régulation des différents systèmes (cardio vasculaire, respiratoire, digestif, nerveux, immunitaire..)',
+    practice_reiki_benefit_release: 'Libération psycho émotionnel, traumas',
     practice_reiki_modalities_intro:
       'Les séances peuvent être proposées en individuel ou en petit groupe, selon les besoins.',
     practice_reiki_public: 'Publics : tout public, particuliers et professionnels.',
@@ -366,6 +376,16 @@ const translations = {
     practice_reiki_about_title: 'Reiki',
     practice_reiki_about_body:
       'Reiki is a Japanese well-being technique using hands-on methods to support overall balance. Sessions respect your pace.',
+    practice_reiki_benefits_title: 'What benefits to expect?',
+    practice_reiki_benefit_healing: 'Awakening of your self-healing systems',
+    practice_reiki_benefit_body_awareness: 'Improved body awareness',
+    practice_reiki_benefit_stress_emotions: 'Better stress and emotion management',
+    practice_reiki_benefit_energy: 'Increased energy',
+    practice_reiki_benefit_circulation: 'Improved energy circulation',
+    practice_reiki_benefit_pain_relief: 'Relief from physical pain',
+    practice_reiki_benefit_regulation:
+      'Regulation of different systems (cardiovascular, respiratory, digestive, nervous, immune..)',
+    practice_reiki_benefit_release: 'Psycho-emotional release, traumas',
     practice_reiki_modalities_intro:
       'Sessions can be offered one-on-one or in small groups, depending on needs.',
     practice_reiki_public: 'Audience: open to all, individuals and professionals.',
