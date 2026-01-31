@@ -58,7 +58,7 @@ const translations = {
       'Les pratiques proposées s’inscrivent dans une démarche de bien-être et ne se substituent pas à un suivi médical ou thérapeutique.',
     about_framework_desc2:
       'Les lieux d’intervention pouvant varier, les informations pratiques sont communiquées lors de la prise de contact.',
-    about_photo_alt: 'Portrait de Claudia Maftei, thérapeute holistique',
+    about_photo_alt: 'Illustration d\'une méditation en lotus',
     section_contact_title: 'Contact',
     section_contact_subtitle: 'Écris ou appelle pour connaître les disponibilités et modalités.',
     contact_details_title: 'Coordonnées',
@@ -303,7 +303,7 @@ const translations = {
       'The practices offered are part of a well-being approach and do not replace medical or therapeutic care.',
     about_framework_desc2:
       'Since locations may vary, practical information is shared when you get in touch.',
-    about_photo_alt: 'Portrait of Claudia Maftei, holistic therapist',
+    about_photo_alt: 'Illustration of a lotus meditation',
     section_contact_title: 'Contact',
     section_contact_subtitle: 'Write or call to check availability and details.',
     contact_details_title: 'Contact details',
