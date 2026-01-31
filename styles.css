@@ -289,6 +289,20 @@ a{ color: inherit; }
   gap: 1rem;
 }
 
+.practice-figure{
+  margin: 1.2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.practice-figure img{
+  width: 100%;
+  max-width: 520px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.12);
+  object-fit: cover;
+}
+
 /* ABOUT: ajout photo (image 1) */
 .about-with-photo{
   grid-template-columns: 280px 1fr 1fr;
