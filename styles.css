@@ -276,6 +276,12 @@ a{ color: inherit; }
   object-fit: cover;
 }
 
+.practice-visual--contain img{
+  max-height: none;
+  object-fit: contain;
+  background: rgba(255,255,255,.8);
+}
+
 .grid{
   display:grid;
   grid-template-columns: repeat(3, 1fr);
