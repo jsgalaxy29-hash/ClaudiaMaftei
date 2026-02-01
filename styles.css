@@ -192,7 +192,7 @@ a{ color: inherit; }
 
 /* Image 2 dans le hero */
 .hero-image{
-  background: url("images/portrait-claudia.png") bottom right/contain no-repeat;
+  background: url("images/portrait-claudia.png") center/cover no-repeat;
 }
 
 /* voile pour garder un rendu doux et préserver la lisibilité des éléments */
