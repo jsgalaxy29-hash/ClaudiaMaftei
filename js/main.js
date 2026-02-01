@@ -78,9 +78,10 @@ const translations = {
     privacy_panel_text:
       'Les informations envoyées via le formulaire servent uniquement à répondre à la demande et ne sont pas revendues.',
     footer_note: 'Reiki · Kundalini · Yoga · Breathwork · Méditation',
-    contact_success_message: 'Merci, votre message a bien été envoyé.',
-    contact_error_message:
-      'Une erreur est survenue. Merci de réessayer ou d’utiliser le mail direct.',
+    contact_status_success: 'Message envoyé. Je reviens vers vous rapidement.',
+    contact_status_error: 'Erreur lors de l’envoi. Réessayez ou contactez-moi par téléphone.',
+    contact_status_invalid: 'Champs invalides. Vérifiez votre email et votre message.',
+    contact_status_spam: 'Envoi bloqué.',
     meta_index_description:
       'Claudia Maftei – Thérapeute holistique : Reiki, Kundalini activation, Yoga (Hatha, Restorative), Breathwork/Pranayama, Méditation.',
     meta_kundalini_description:
@@ -333,9 +334,10 @@ const translations = {
     privacy_panel_text:
       'Information sent through the form is used only to respond to your request and is not resold.',
     footer_note: 'Reiki · Kundalini · Yoga · Breathwork · Meditation',
-    contact_success_message: 'Thank you, your message has been sent.',
-    contact_error_message:
-      'An error occurred. Please try again or use the direct email address.',
+    contact_status_success: 'Message sent. I will get back to you soon.',
+    contact_status_error: 'Error sending the message. Please try again or contact me by phone.',
+    contact_status_invalid: 'Invalid fields. Please check your email and message.',
+    contact_status_spam: 'Submission blocked.',
     meta_index_description:
       'Claudia Maftei – Holistic therapist: Reiki, Kundalini activation, Yoga (Hatha, Restorative), Breathwork/Pranayama, Meditation.',
     meta_kundalini_description:
@@ -620,18 +622,23 @@ document.querySelectorAll('[data-lang]').forEach((button) => {
 
 const contactSection = document.getElementById('contact');
 const contactForm = contactSection?.querySelector('form');
+const contactStatus = document.getElementById('contact-status');
+const status = params.get('status');
 
-if (contactSection && contactForm && (params.has('sent') || params.has('error'))) {
-  const message = document.createElement('div');
-  if (params.get('sent') === '1') {
-    message.className = 'flash flash-success';
-    message.textContent = translations[activeLang].contact_success_message;
-  } else {
-    message.className = 'flash flash-error';
-    message.textContent = translations[activeLang].contact_error_message;
-  }
-  contactForm.parentElement?.insertBefore(message, contactForm);
+const statusMessages = {
+  success: translations[activeLang]?.contact_status_success,
+  error: translations[activeLang]?.contact_status_error,
+  invalid: translations[activeLang]?.contact_status_invalid,
+  spam: translations[activeLang]?.contact_status_spam,
+};
 
-  const cleanUrl = `${window.location.pathname}${window.location.hash.split('?')[0] || ''}`;
+if (contactSection && contactForm && contactStatus && statusMessages[status]) {
+  contactStatus.textContent = statusMessages[status];
+  contactStatus.classList.remove('flash-success', 'flash-error');
+  contactStatus.classList.add(status === 'success' ? 'flash-success' : 'flash-error');
+  contactStatus.hidden = false;
+
+  const cleanHash = window.location.hash || '#contact';
+  const cleanUrl = `${window.location.pathname}${cleanHash}`;
   window.history.replaceState({}, document.title, cleanUrl);
 }
