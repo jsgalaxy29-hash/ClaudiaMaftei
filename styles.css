@@ -35,7 +35,7 @@ body::after{
   width: 420px;
   height: 420px;
   background: url("images/lotus-om.png") no-repeat center/contain;
-  opacity: .16;
+  opacity: .9;
   pointer-events: none;
   z-index: 0;
 }
