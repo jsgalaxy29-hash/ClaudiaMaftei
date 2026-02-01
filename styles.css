@@ -30,10 +30,10 @@ body{
 body::after{
   content:"";
   position: fixed;
-  right: -120px;
-  bottom: -120px;
-  width: 420px;
-  height: 420px;
+  right: 16px;
+  bottom: 16px;
+  width: clamp(220px, 35vw, 360px);
+  height: clamp(220px, 35vw, 360px);
   background: url("images/lotus-om.png") no-repeat center/contain;
   opacity: .9;
   pointer-events: none;
