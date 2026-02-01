@@ -1,27 +1,46 @@
 <?php
+$CONTACT_TO = 'claudia.segalen@gmail.com';
+$CONTACT_SUBJECT_PREFIX = '[Site Claudia] ';
+
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
     exit('Method Not Allowed');
 }
 
+$redirectBase = 'index.html?status=';
+$redirectAnchor = '#contact';
+
 if (!empty($_POST['website'] ?? '')) {
-    http_response_code(200);
-    exit('OK');
+    header('Location: ' . $redirectBase . 'spam' . $redirectAnchor);
+    exit;
 }
 
-$name = trim($_POST['name'] ?? '');
-$email = trim($_POST['email'] ?? '');
-$message = trim($_POST['message'] ?? '');
+$name = trim((string) ($_POST['name'] ?? ''));
+$email = trim((string) ($_POST['email'] ?? ''));
+$message = trim((string) ($_POST['message'] ?? ''));
 
-if ($name === '' || $message === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    header('Location: index.html#contact?error=1');
+$maxNameLength = 100;
+$maxEmailLength = 254;
+$maxMessageLength = 2000;
+
+if (
+    $name === '' ||
+    $message === '' ||
+    $email === '' ||
+    strlen($name) > $maxNameLength ||
+    strlen($email) > $maxEmailLength ||
+    strlen($message) > $maxMessageLength ||
+    preg_match('/[\r\n]/', $email) ||
+    !filter_var($email, FILTER_VALIDATE_EMAIL)
+) {
+    header('Location: ' . $redirectBase . 'invalid' . $redirectAnchor);
     exit;
 }
 
 $serverName = $_SERVER['SERVER_NAME'] ?? 'example.com';
 $from = 'no-reply@' . $serverName;
 
-$subject = 'Nouveau message depuis le site Claudia Maftei';
+$subject = $CONTACT_SUBJECT_PREFIX . 'Nouveau message depuis le site';
 $body = "Nom : {$name}\n";
 $body .= "Email : {$email}\n\n";
 $body .= "Message :\n{$message}\n";
@@ -31,12 +50,12 @@ $headers[] = 'From: ' . $from;
 $headers[] = 'Reply-To: ' . $email;
 $headers[] = 'Content-Type: text/plain; charset=UTF-8';
 
-$sent = mail('claudia.segalen@gmail.com', $subject, $body, implode("\r\n", $headers));
+$sent = mail($CONTACT_TO, $subject, $body, implode("\r\n", $headers));
 
 if ($sent) {
-    header('Location: index.html#contact?sent=1');
+    header('Location: ' . $redirectBase . 'success' . $redirectAnchor);
     exit;
 }
 
-header('Location: index.html#contact?error=1');
+header('Location: ' . $redirectBase . 'error' . $redirectAnchor);
 exit;

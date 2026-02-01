@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="Claudia Maftei – Thérapeute holistique : Reiki, Kundalini activation, Yoga (Hatha, Restorative), Breathwork/Pranayama, Méditation." data-i18n-content="meta_index_description" />
   <title data-i18n="page_title_index">Claudia Maftei – Thérapeute holistique</title>
+  <link rel="canonical" href="https://claudia-maftei.com/index.html">
+  <meta property="og:title" content="Claudia Maftei – Thérapeute holistique" />
+  <meta property="og:description" content="Claudia Maftei – Thérapeute holistique : Reiki, Kundalini activation, Yoga (Hatha, Restorative), Breathwork/Pranayama, Méditation." />
+  <meta property="og:url" content="https://claudia-maftei.com/index.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://claudia-maftei.com/images/portrait-claudia.png" />
 
   <!-- Fonts (Google Fonts) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -145,6 +151,8 @@
           <div class="about-photo">
             <img src="images/meditation-lotus.png"
                  alt="Illustration d'une méditation en lotus"
+                 loading="lazy"
+                 decoding="async"
                  data-i18n-alt="about_photo_alt">
           </div>
 
@@ -196,6 +204,7 @@
 
           <div class="panel">
             <h3 data-i18n="contact_message_title">Message</h3>
+            <div id="contact-status" class="flash" role="status" aria-live="polite" hidden></div>
             <form class="form" action="contact.php" method="post">
               <label>
                 <span data-i18n="form_name">Nom</span>
