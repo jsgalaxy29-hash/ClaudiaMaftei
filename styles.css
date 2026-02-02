@@ -308,14 +308,32 @@ a{ color: inherit; }
 
 .card-link{
   display:block;
+  position: relative;
   text-decoration:none;
   color: inherit;
   transition: transform .2s ease, box-shadow .2s ease;
+}
+.card-link::after{
+  content:"";
+  position: absolute;
+  inset: -6px;
+  border-radius: calc(var(--radius) + 6px);
+  box-shadow:
+    0 0 0 1px rgba(212, 175, 55, .45),
+    0 0 16px rgba(212, 175, 55, .45),
+    0 0 32px rgba(255, 215, 0, .28);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease;
 }
 .card-link:hover,
 .card-link:focus-visible{
   transform: translateY(-2px);
   box-shadow: 0 12px 32px rgba(0,0,0,.1);
+}
+.card-link:hover::after,
+.card-link:focus-visible::after{
+  opacity: 1;
 }
 .card-link:focus-visible{
   outline: 2px solid rgba(159,182,165,.7);
